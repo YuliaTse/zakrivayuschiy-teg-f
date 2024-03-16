@@ -11,9 +11,9 @@
     --main-color: #fff;
     --accent-color: #000;
     --button-color: #fff; 
-    --background-gradient: repeating-linear-gradient(transparent 0, transparent 2px, #d3d3d3 2px, #d3d3d3 4px), 
-    repeating-linear-gradient(to left, transparent 0, transparent 2px, #d3d3d3 2px, 
-    #d3d3d3 4px), repeating-linear-gradient(180deg, #E7E7E7 0.01%, #1A1A1A 100%);
+    --background-gradient: repeating-linear-gradient(to left, #d3d3d3 0 2px, transparent 2px 4px),
+    repeating-linear-gradient(to bottom, #d3d3d3 0 2px, transparent 2px 4px),
+    repeating-linear-gradient(to bottom, #e7e7e7 .01%, #1a1a1a 100%);
   }
   
   :root.theme-dark {
@@ -22,9 +22,8 @@
     --main-color: #000;
     --accent-color: #00cc14;
     --button-color: #00cc14;
-    --background-gradient: repeating-linear-gradient(transparent 0, transparent 2px, #000 2px, #000 4px), 
-      repeating-linear-gradient(to left, transparent 0, transparent 2px, #000 2px, #000 4px), 
-      repeating-linear-gradient(180deg, #007F0C 0.01%, #004306 100%);
+    --background-gradient: repeating-linear-gradient(to left, #000 0 2px, transparent 2px 4px),
+    repeating-linear-gradient(to bottom, #007f0c 0 2px, #004306 2px 4px);
     }
   
   @media (prefers-color-scheme: dark) {
@@ -35,8 +34,7 @@
       --main-color: #000;
       --accent-color: #00cc14;
       --button-color: #00cc14; 
-      --background-gradient: repeating-linear-gradient(transparent 0, transparent 2px, #000 2px, #000 4px), 
-      repeating-linear-gradient(to left, transparent 0, transparent 2px, #000 2px, #000 4px), 
-      repeating-linear-gradient(180deg, #007F0C 0.01%, #004306 100%);
+      --background-gradient:  repeating-linear-gradient(to left, #000 0 2px, transparent 2px 4px),
+      repeating-linear-gradient(to bottom, #007f0c 0 2px, #004306 2px 4px);
     }
   }

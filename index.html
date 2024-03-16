@@ -17,8 +17,8 @@
     <script src="./scripts/set-theme.js"></script>
   </head>
   <body class="page">
-    <header class="header">
-      <a class="header__logo" href="#0"> &lt;/html&gt; </a>
+    <header class="header content-section">
+      <a class="header__logo"> &lt;/html&gt; </a>
       <h1 class="header__title">Закрывающий тег</h1>
       <nav class="theme-menu header__theme-menu">
         <!-- Не меняйте разметку этого списка, иначе скрипты перестанут работать -->
@@ -46,7 +46,7 @@
         </ul>
       </nav>
     </header>
-    <main>
+    <main class="content content-section">
       <ul class="card-list">
         <li class="card-list__item">
           <article class="card">
@@ -467,22 +467,22 @@
           </article>
         </li>
       </ul>
+      <div class="save">
+        <button class="save__button animation-button" type="button" 
+        onclick="window['dialog__save'].showModal();" 
+        aria-controls="dialog__save">
+          <svg xmlns="http://www.w3.org/2000/svg" class="floppy__save" viewBox="0 0 29 28">
+            <use href="./svg/floppy.svg#floppy" fill="currentColor"></use>
+          </svg>
+          
+          <span class="button__text">
+            Сохранить на память
+          </span>
+        </button>
+      </div>      
     </main>
-    <footer class="footer">
-      <button class="footer__button animation-button" type="button" 
-      onclick="window['dialog__save'].showModal();" 
-      aria-controls="dialog__save">
-        <svg xmlns="http://www.w3.org/2000/svg" class="floppy__footer" viewBox="0 0 29 28">
-          <use href="./svg/floppy.svg#floppy" fill="currentColor"></use>
-        </svg>
-        
-        <span class="button__text">
-          Сохранить на память
-        </span>
-      </button>
-    </footer>
     <dialog id="dialog__save">
-      <svg xmlns="http://www.w3.org/2000/svg" class="floppy__footer" viewBox="0 0 29 28">
+      <svg xmlns="http://www.w3.org/2000/svg" class="floppy__save" viewBox="0 0 29 28">
         <use href="./svg/floppy.svg#floppy" fill="currentColor"></use>
       </svg>
       <p class="dialog__text">
