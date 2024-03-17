@@ -8,7 +8,7 @@
     --accent-color: #000;
     --button-color: #fff;
     --sparks-color: #f00;
-
+    --heart-contour-color: #000000;
     --content-max-inline-size: clamp(375px, 100vw, 700px);
     --menu-arrow-offset: calc(0px - (var(--menu-offset) - 4px));
     --background-gradient:
