@@ -206,10 +206,10 @@
   text-transform: lowercase;
 }
 
-@supports (-webkit-text-stroke: 1px var(--main-color)) {
-  
-  .image-wrapper__decor {
+@supports (-webkit-text-stroke: #fff) {
+    .image-wrapper__decor {
     -webkit-text-stroke: 1px var(--main-color);
+    text-shadow: none;
   }
 }
 
@@ -235,11 +235,10 @@
 }
 
 .card__icon-button {
-  width: 38px;
-  height: 37px;
+  display: flex;
+  justify-content: center;
   background-color: transparent;
   border: none;
-  margin-inline-end: 12px;
   cursor: pointer;
   outline: none;
   transition: outline 0.3s ease;
@@ -314,8 +313,8 @@
 }
 
 .floppy__save {
-  max-block-size: 28px;
-  max-inline-size: 28px;
+  width: 28px;
+  height: 28px;
   mix-blend-mode: difference;
   fill: var(--button-color);
   color: var(--button-color);
@@ -341,6 +340,8 @@
   row-gap: 20px;
   justify-content: center;
   align-items: center;
+  padding: 30px 40px 30px 40px;
+  max-width: 341px;
 }
 
 .dialog__text {
@@ -355,6 +356,8 @@
 #dialog__save[open] .floppy__save {
   width: 39px;
   height: 39px;
+  mix-blend-mode: difference;
+  margin-bottom: 5px;
 }
 
 .dialog__button {
@@ -377,6 +380,6 @@
 @media (width >= 1400px) {
 
   .save__button {
-    flex-direction: column;
+    flex-direction: row;
   }
 }

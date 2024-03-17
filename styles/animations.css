@@ -48,22 +48,22 @@
   
   .core {
     fill: transparent;
-    transition: fill 0.3s ease 0.03s;
+    transition: fill 0.3s linear 0.03s;
   }
   
   .like-icon:hover .core {
     fill: var(--accent-color);
-
+    transition-delay: 0s;
   }
   
   .like-icon:active .core {
     fill: var(--sparks-color);
-
+    transition-delay: 0s;
   }
   
   .main-body {
     fill: transparent;
-   
+    transition: fill 0.3s;
   }
   
   .like-icon:hover .main-body {
@@ -75,19 +75,11 @@
     fill: var(--sparks-color);
     transition-delay: 0.05s;
   }
-  
-  /*.like-icon .core {
-    transition: fill 0.3s linear;
-  } удалить*/
-  
+    
   .like-icon.is-liked .core {
     fill: var(--sparks-color);
     transition: fill 0.3s linear;
   }
-  
-  /*.like-icon .main-body {
-    transition: fill 0.3s linear 0.05s;
-  }*/
   
   .like-icon.is-liked .main-body {
     fill: var(--sparks-color);
@@ -96,14 +88,14 @@
   
   .like-icon.is-liked .contour {
     fill: var(--sparks-color);
-    transition: fill 0.3s 0.06s;
+    transition: fill 0.3s 0.06s linear;
   }
   
   .like-icon.is-liked .heart {
     transform-origin: center center;
-    animation: scale__heart 0.3s 0.1s ease-in 2 alternate;
+    animation: scale__heart 0.3s 0.1s ease-in 1 alternate;
   }
   
   .like-icon.is-liked .sparks {
-    animation: sparks__opacity 0.3s 0.3s ease-in 2 alternate;
+    animation: sparks__opacity 0.3s 0.3s ease-in 1 alternate;
   }
