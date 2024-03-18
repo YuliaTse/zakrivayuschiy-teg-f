@@ -48,7 +48,7 @@
 
 .like-icon .contour {
   transition: fill;
-  fill: var(--heart-contour-color);
+  fill: var(--accent-color);
   transition-duration: 0.1s;
   transition-delay: 0s;
   transition-timing-function: linear;

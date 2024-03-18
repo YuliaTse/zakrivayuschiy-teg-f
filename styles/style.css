@@ -206,10 +206,13 @@
   text-transform: lowercase;
 }
 
-@supports (-webkit-text-stroke: #fff) {
+@supports (
+  (-webkit-text-stroke: #fff)  or (text-stroke: 1px #fff)
+  ) {
     .image-wrapper__decor {
     -webkit-text-stroke: 1px var(--main-color);
     text-shadow: none;
+    text-stroke: 1px var(--main-color);
   }
 }
 
@@ -255,6 +258,7 @@
 .card__like-button {
   padding: 8px 17px;
   min-width: 130px;
+  margin-left: 2px;
 }
 
 .animation-button {
@@ -313,8 +317,8 @@
 }
 
 .floppy__save {
-  width: 28px;
-  height: 28px;
+  width: 23px;
+  height: 21px;
   mix-blend-mode: difference;
   fill: var(--button-color);
   color: var(--button-color);
@@ -381,4 +385,5 @@
   .save__button {
     flex-direction: row;
   }
+ 
 }
