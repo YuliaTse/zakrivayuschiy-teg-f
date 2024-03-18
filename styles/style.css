@@ -317,8 +317,8 @@
 }
 
 .floppy__save {
-  width: 23px;
-  height: 21px;
+  width: 28px;
+  height: 28px;
   mix-blend-mode: difference;
   fill: var(--button-color);
   color: var(--button-color);
@@ -378,6 +378,7 @@
   .image-wrapper__decor {
     right: 25px;
   }
+  
 }
 
 @media (width >= 1400px) {
@@ -385,5 +386,8 @@
   .save__button {
     flex-direction: row;
   }
- 
+  .floppy__save {
+    width: 21px;
+    height: 21px;
+  }
 }
